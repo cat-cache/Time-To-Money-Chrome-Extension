@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 27px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+      margin-top: 0;
+    }
+
+    p {
+      color: #666;
+    }
+
+    select,
+    input[type="number"] {
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      background-color: #30cf88;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Set Your Hourly Wage</h3>
+    <p>Note: Default hourly wage is 100 INR per hour.</p>
+    <select id="currency">
+      <option value="INR">INR</option>
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="GBP">GBP</option>
+      <option value="AUD">AUD</option>
+      <option value="CAD">CAD</option>
+      <option value="JPY">JPY</option>
+      <option value="CHF">CHF</option>
+      <option value="CNY">CNY</option>
+      
+    </select>
+    <input type="number" id="hourlyWage" placeholder="Enter hourly wage" />
+    <button id="save">Save</button>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
+
